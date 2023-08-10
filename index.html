@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu videogame usado</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu videogame usado para vender mais rápido!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda fácil seu videogame usado!</h1>
+                <p>Descreva as características e o que vem incluso.</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                        <input 
+                        type="text" 
+                        name="title" 
+                        id="title" 
+                        class="block" 
+                        placeholder="Um título para anunciar seu videogame usado" 
+                        minlength="1" 
+                        maxlength="30" 
+                        required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input 
+                        type="number" 
+                        name="price" 
+                        id="price" 
+                        class="block" 
+                        placeholder="Defina um preço" 
+                        required>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block" placeholder="Aqui você colocar os detalhes do videogame, por exemplo: se ele vem com jogos."></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">Marca <span class="required-field">*</span></label>
+                        <input 
+                        type="text" 
+                        name="brand" 
+                        id="brand" 
+                        class="block" 
+                        placeholder="Digite a marca do videogame" 
+                        required>
+                    </div>
+                    <div class="box-input">
+                        <label for="model">Modelo <span class="required-field">*</span></label>
+                        <input 
+                        type="text" 
+                        name="model" 
+                        id="model" 
+                        class="block" 
+                        placeholder="Digite o modelo do videogame" 
+                        required>
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase_date">Data de compra <span class="required-field">*</span></label>
+                        <input 
+                        type="date" 
+                        name="purchase_date" 
+                        id="purchase_date" 
+                        class="block" 
+                        required>
+                    </div>
+                    <div class="box-input">
+                        <p>Está funcionando direito? <span class="required-field">*</span></p>
+                        <input type="radio" id="yes" name="functional">
+                        <label for="yes">Sim</label>
+                        <input type="radio" id="no" name="functional">
+                        <label for="no">Não</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>O que vem incluso: </p>
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="HDMIcable" 
+                                name="optional[]" 
+                                value="HDMIcable">
+                                <label for="HDMIcable">Cabo HDMI</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="joystick" 
+                                name="optional[]" 
+                                value="joystick">
+                                <label for="joystick">Controle</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="powerCord" 
+                                name="optional[]" 
+                                value="powerCord">
+                                <label for="powerCord">Cabo de Força</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="battery" 
+                                name="optional[]" 
+                                value="battery">
+                                <label for="battery">Duas pilhas AA</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="games"
+                                name="optional[]" 
+                                value="games">
+                                <label for="games">Jogos</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="USBcable" 
+                                name="optional[]" 
+                                value="USBcable">
+                                <label for="USBcable">Cabo USB</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="powerSupply" 
+                                name="optional[]" 
+                                value="powerSupply">
+                                <label for="powerSupply">Fonte de Alimentação</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="headset" 
+                                name="optional[]" 
+                                value="headset">
+                                <label for="headset">Fone de Ouvido</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <label for="quantity">Se sim, quantos jogos vem? <span class="required-field">*</span></label>
+                        <input 
+                        type="number" 
+                        name="quantity" 
+                        id="quantity" 
+                        class="block" 
+                        placeholder="Digite a quantidade de jogos" 
+                        required>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do videogame: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos dos jogos: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
